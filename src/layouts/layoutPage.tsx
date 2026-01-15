@@ -1,5 +1,6 @@
 import Header from '@/layouts/comp/Header';
 import { HeaderPropsProvider, type HeaderProps } from '@/models/headerContext';
+import { Box, Container } from '@mui/material';
 import { useCallback, useState } from 'react';
 import { Outlet } from 'react-router-dom';
 
@@ -18,13 +19,13 @@ export default function LayoutPage() {
   }, []);
 
   return (
-    <div className="app">
+    <Box className="wrapper">
       <Header headerProps={headerProps} />
-      <main className="content">
+      <Container className="container">
         <HeaderPropsProvider value={setHeaderProps}>
           <Outlet />
         </HeaderPropsProvider>
-      </main>
-    </div>
+      </Container>
+    </Box>
   );
 }

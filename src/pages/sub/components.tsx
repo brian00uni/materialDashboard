@@ -1,29 +1,16 @@
 // material
 import { useSetHeaderProps } from '@/models/headerContext';
-import {
-  Autocomplete,
-  Box,
-  Card,
-  FormControlLabel,
-  FormGroup,
-  Grid,
-  List,
-  Slider,
-  Stack,
-  Switch,
-  TextField,
-  Typography,
-} from '@mui/material';
+import { Autocomplete, Box, Card, Grid, List, Stack, TextField, Typography } from '@mui/material';
 import { useEffect } from 'react';
 
 // ========= Dashboard ========= //
 
-export default function Dashboard() {
+export default function Components() {
   const setHeaderProps = useSetHeaderProps();
 
   useEffect(() => {
     setHeaderProps({
-      pageTitle: 'Dashboard',
+      pageTitle: 'components',
       backButton: true,
       closeButton: true,
       fnGoBack: undefined,
@@ -37,25 +24,11 @@ export default function Dashboard() {
 
   return (
     <Grid container rowSpacing={4.5} columnSpacing={2.75}>
-      <Slider
-        aria-label="Temperature"
-        defaultValue={30}
-        valueLabelDisplay="auto"
-        shiftStep={30}
-        step={10}
-        marks
-        min={10}
-        max={110}
-      />
-
-      <FormGroup>
-        <FormControlLabel control={<Switch defaultChecked />} label="Label" />
-        <FormControlLabel required control={<Switch />} label="Required" />
-        <FormControlLabel disabled control={<Switch />} label="Disabled" />
-      </FormGroup>
-
       {/* row 1 */}
-
+      <Grid sx={{ mb: -2.25 }} size={12}>
+        <Typography variant="h5">Dashboard</Typography>
+      </Grid>
+      <Grid size={{ xs: 12, sm: 6, lg: 3 }}>aaa</Grid>
       <Autocomplete
         disablePortal
         options={options}
