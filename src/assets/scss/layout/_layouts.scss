@@ -33,20 +33,22 @@ body {
   font-size: $body-font-size;
   // background-color: #f6f7fb;
   color: #111;
-}
+  * {
+    font-size: $body-font-size;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+  button {
+    font: inherit;
+  }
 
-button {
-  font: inherit;
-}
-
-img {
-  max-width: 100%;
-  display: block;
+  img {
+    max-width: 100%;
+    display: block;
+  }
 }
 
 // App layout helpers (used by layoutPage/Header)
