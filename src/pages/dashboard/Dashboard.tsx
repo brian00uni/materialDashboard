@@ -4,6 +4,7 @@ import {
   Autocomplete,
   Box,
   Card,
+  Chip,
   FormControlLabel,
   FormGroup,
   Grid,
@@ -34,6 +35,10 @@ export default function Dashboard() {
     { label: 'The Godfather', id: 1 },
     { label: 'Pulp Fiction', id: 2 },
   ];
+
+  const handleDelete = () => {
+    console.info('You clicked the delete icon.');
+  };
 
   return (
     <Grid container rowSpacing={4.5} columnSpacing={2.75}>
@@ -69,6 +74,19 @@ export default function Dashboard() {
           </Grid>
           <Grid />
         </Grid>
+
+        <Stack direction="row" spacing={1}>
+          <Chip label="Deletable" variant="isFocus" onDelete={handleDelete} />
+          <Chip label="Deletable" variant="outlined" onDelete={handleDelete} />
+          <Chip
+            label="Clickable Link"
+            component="a"
+            href="https://www.daum.net/"
+            variant="outlined"
+            clickable
+          />
+        </Stack>
+
         <List>dddd</List>
         <Card sx={{ mt: 2 }}>
           <Box sx={{ p: 3, pb: 0 }}>

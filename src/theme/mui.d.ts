@@ -59,7 +59,7 @@ declare module '@mui/material/ButtonGroup' {
 
 declare module '@mui/material/Chip' {
   interface ChipPropsVariantOverrides {
-    // No custom variants found in C:/Users/gccare14/Desktop/test_Work/react-material/materialDashboard-react/src/theme/theme.ts
+    isFocus: true;
   }
 }
 

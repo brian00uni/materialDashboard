@@ -69,6 +69,22 @@ const theme = createTheme({
           },
       },
     },
+    MuiChip: {
+      styleOverrides: {
+        root: {
+          // fontSize: '1.4rem',
+        },
+      },
+      variants: [
+        {
+          props: { variant: 'isFocus' },
+          style: {
+            color: '#f44',
+            fontWeight: 'bold',
+          },
+        },
+      ],
+    },
     MuiTypography: {
       styleOverrides: {
         root: {
