@@ -5,11 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "prebuild": "node scripts/update-mui-variants.mjs",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "format": "prettier . --write",
-    "format:check": "prettier . --check"
+    "format:check": "prettier . --check",
+    "mui:variants": "node scripts/update-mui-variants.mjs",
+    "mui:variants:watch": "node scripts/watch-mui-variants.mjs"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",

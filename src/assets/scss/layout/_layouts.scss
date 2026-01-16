@@ -3,17 +3,17 @@
 
 // MUI-friendly base reset: keep it light and avoid overriding component defaults.
 :root {
-  color-scheme: light;
-  font-family:
-    'NanumSquare',
-    system-ui,
-    -apple-system,
-    'Segoe UI',
-    sans-serif;
+  // color-scheme: light;
+  // font-family:
+  //   'NanumSquare',
+  //   system-ui,
+  //   -apple-system,
+  //   'Segoe UI',
+  //   sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: $body-size; //body size 10px
+  // font-size: $body-size; //body size 10px
 }
 
 *,
@@ -29,12 +29,12 @@ body,
 }
 
 body {
-  margin: 0;
-  font-size: $body-font-size;
+  // margin: 0;
+  // font-size: $body-font-size;
   // background-color: #f6f7fb;
-  color: #111;
+  // color: #111;
   * {
-    font-size: $body-font-size;
+    // font-size: $body-font-size;
   }
   a {
     color: inherit;
